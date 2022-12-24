@@ -1,7 +1,7 @@
 import { take, call, put, select, takeLatest } from 'redux-saga/effects';
 import { handleGetBookData } from '.';
 import * as types from './action_types';
-import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import axios from 'axios';
 
 const getBookData = () => {
   return axios.get('https://mocki.io/v1/f7055a28-703d-47d9-9a39-0522d4e133e8');
